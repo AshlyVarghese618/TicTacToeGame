@@ -12,16 +12,28 @@ public class game {
 	public void start() {
 		s = new Scanner(System.in);
 			
-		System.out.println("Enter Payer 1 Name : ");
+		System.out.println("Enter Player 1 Name : ");
 		String player1 = s.nextLine();
-		System.out.println("Enter Payer 1 type(1.Human 2.AI) : ");
-		int playerType1 = s.nextInt();
-		
-		System.out.println("Enter Payer 2 Name : ");
+		int playerType1=0;
+		System.out.println("Enter Player 1 type(1.Human 2.AI) : ");
+		while(!s.hasNextInt())
+		{
+			 System.out.println("Please enter a number 1 or 2");
+	         s.next();
+			
+		}
+		playerType1 = s.nextInt();
+		System.out.println("Enter Player 2 Name : ");
 		String player2 = s.next();
-		System.out.println("Enter Payer 2 type(1.Human 2.AI) : ");
-		int playerType2 = s.nextInt();
-		
+		int playerType2 = 0;
+		System.out.println("Enter Player 2 type(1.Human 2.AI) : ");
+		while(!s.hasNextInt())
+		{
+			 System.out.println("Please enter a number 1 or 2");
+	         s.next();
+			
+		}
+		playerType2 = s.nextInt();
 		if(playerType1==1 && playerType2==1) {
 			playerX = new HumanPlayer("X",player1,gameBoard);
 			playerO = new HumanPlayer("O",player2,gameBoard);
