@@ -196,11 +196,17 @@ public class board {
 
 	void printBoard() {
 		System.out.println("/---|---|---\\");
-		System.out.println("| " + blockArray[0][0].getState() + " | " + blockArray[0][1].getState() + " | " + blockArray[0][2].getState() + " |");
+		System.out.println("| " + (blockArray[0][0].getState().equals("EMPTY")?"1":blockArray[0][0].getState()) + " | " + 
+				(blockArray[0][1].getState().equals("EMPTY")?"2":blockArray[0][1].getState()) + " | " 
+				+ (blockArray[0][2].getState().equals("EMPTY")?"3":blockArray[0][2].getState()) + " |");
 		System.out.println("|-----------|");
-		System.out.println("| " + blockArray[1][0].getState() + " | " + blockArray[1][1].getState() + " | " + blockArray[1][2].getState() + " |");
+		System.out.println("| " + (blockArray[1][0].getState().equals("EMPTY")?"4":blockArray[1][0].getState()) + " | " +
+				(blockArray[1][1].getState().equals("EMPTY")?"5":blockArray[1][1].getState()) + " | " + 
+				(blockArray[1][2].getState().equals("EMPTY")?"6":blockArray[1][2].getState()) + " |");
 		System.out.println("|-----------|");
-		System.out.println("| " + blockArray[2][0].getState() + " | " + blockArray[2][1].getState() + " | " + blockArray[2][2].getState() + " |");
+		System.out.println("| " + (blockArray[2][0].getState().equals("EMPTY")?"7":blockArray[2][0].getState()) + " | " + 
+				(blockArray[2][1].getState().equals("EMPTY")?"8":blockArray[2][1].getState()) + " | " + 
+				(blockArray[2][2].getState().equals("EMPTY")?"9":blockArray[2][2].getState()) + " |");
 		System.out.println("/---|---|---\\");
 	}
 	//checks whether a win-condition exists or not
