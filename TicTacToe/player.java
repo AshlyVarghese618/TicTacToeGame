@@ -4,7 +4,7 @@ public abstract class player {
 	private String symbol;
 	private String name;
 	private board board;
-	
+
 	public String getSymbol() {
 		return symbol;
 	}
@@ -34,7 +34,6 @@ public abstract class player {
 		this.name = name;
 		this.board = board;
 	}
-	
-	public abstract boolean play(int block);
 
+	public abstract boolean play();
 }
