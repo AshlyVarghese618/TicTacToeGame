@@ -1,5 +1,13 @@
 package TicTacToe;
 
+/**
+ * player.java
+ * Abstract class with responsibilities for a player
+ *
+ * @author Team13
+ * @version 1.0
+ * @since Oct 24, 2020
+ */
 public abstract class player {
 	private String symbol;
 	private String name;

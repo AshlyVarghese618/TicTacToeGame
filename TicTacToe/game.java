@@ -3,6 +3,14 @@ package TicTacToe;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * game.java
+ * Game class for managing the overall game
+ *
+ * @author Team13
+ * @version 1.0
+ * @since Oct 24, 2020
+ */
 public class game {
 	Scanner s;
 	board gameBoard = new board();

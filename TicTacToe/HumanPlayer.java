@@ -1,8 +1,15 @@
 package TicTacToe;
 
-
 import java.util.Scanner;
 
+/**
+ * HumanPlayer.java
+ * Derived HumanPlayer class
+ *
+ * @author Team13
+ * @version 1.0
+ * @since Oct 24, 2020
+ */
 public class HumanPlayer extends player{
 
 	public HumanPlayer(String symbol, String name, board board) {

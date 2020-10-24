@@ -3,6 +3,14 @@ package TicTacToe;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * AIPlayer.java
+ * Derived AIPlayer class
+ *
+ * @author Team13
+ * @version 1.0
+ * @since Oct 24, 2020
+ */
 public class AIPlayer extends player{
 
 	public AIPlayer(String symbol, String name, board board) {

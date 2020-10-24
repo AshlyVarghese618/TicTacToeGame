@@ -2,6 +2,14 @@ package TicTacToe;
 
 import java.util.ArrayList;
 
+/**
+ * board.java
+ * Board class for maintaining and updating the block state
+ *
+ * @author Team13
+ * @version 1.0
+ * @since Oct 24, 2020
+ */
 public class board implements Global {
 	block[][] blockArray = new block[3][3];
 
